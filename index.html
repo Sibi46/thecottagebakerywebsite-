@@ -39,7 +39,8 @@
             z-index: 1000;
         }
         .nav-inner { display: flex; align-items: center; justify-content: space-between; height: 72px; }
-        .logo { display: flex; align-items: center; font-family: var(--fh); font-size: 22px; font-weight: 600; color: var(--dark); letter-spacing: 0.3px; }
+        .logo { display: flex; align-items: center; }
+        .logo img { width: 72px; height: 72px; object-fit: contain; }
         .nav-links { display: flex; align-items: center; gap: 32px; }
         .nav-links a { font-size: 12px; font-weight: 500; text-transform: uppercase; letter-spacing: 1.5px; color: var(--gray); transition: color 0.2s; }
         .nav-links a:hover { color: var(--dark); }
@@ -423,8 +424,8 @@
         /* Small mobile 480px */
         @media (max-width: 480px) {
             .container { padding: 0 16px; }
-            .logo img { width: 36px; height: 36px; }
-            .nav-inner { height: 64px; }
+            .logo img { width: 70px; height: 70px; }
+            .nav-inner { height: 80px; }
             .nav-links.open { top: 64px; }
 
             /* Hero */
@@ -478,7 +479,9 @@
 <!-- NAV -->
 <nav class="nav">
     <div class="container nav-inner">
-        <a href="#" class="logo">The Bakers Cottage</a>
+        <a href="#" class="logo">
+            <img src="logo.png" alt="The Bakers Cottage">
+        </a>
         <ul class="nav-links" id="navLinks">
             <li><a href="#about">About</a></li>
             <li><a href="#menu">Menu</a></li>
@@ -837,6 +840,9 @@ More than just a bakery, The Bakers Cottage is a celebration of artisanal baking
     <div class="container">
         <div class="foot-grid">
             <div class="foot-brand">
+                <div class="logo" style="margin-bottom:18px;">
+                    <img src="logo.png" alt="The Bakers Cottage" style="width:100px;height:100px;object-fit:contain;">
+                </div>
                 <p>Baking memories, one delicious bite at a time. Crafted with love and premium ingredients for any occasion.</p>
             </div>
             <div>
@@ -857,6 +863,11 @@ More than just a bakery, The Bakers Cottage is a celebration of artisanal baking
                     <li>4:30 PM – 10:00 PM</li>
                 </ul>
             </div>
+        </div>
+        <div style="padding:28px 0 20px; border-top:1px solid rgba(255,255,255,0.07); margin-bottom:16px; text-align:center;">
+            <p style="font-size:10px; font-weight:600; letter-spacing:3px; text-transform:uppercase; color:rgba(255,255,255,0.35); margin-bottom:14px;">Licensed & Registered</p>
+            <img src="fssai-register.jpeg" alt="FSSAI Registration Certificate" style="max-width:480px; width:100%; height:auto; border-radius:8px; box-shadow:0 4px 24px rgba(0,0,0,0.4);">
+            <p style="margin-top:12px; font-size:0.82rem; font-weight:600; letter-spacing:1.5px; color:rgba(255,255,255,0.55);">FSSAI REGISTRATION NUMBER : 22421539000172</p>
         </div>
         <div class="copy">&copy; <span id="year"></span> The Bakers Cottage. All rights reserved. &nbsp;·&nbsp; <span style="opacity:.5">Website by Sibi Tech</span></div>
     </div>
